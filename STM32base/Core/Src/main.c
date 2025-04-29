@@ -90,15 +90,16 @@ int main(void)
 
   /* USER CODE END 2 */
 
-  /* Infinite loop */
-  /* USER CODE BEGIN WHILE */
-  while (1)
-  {
-    /* USER CODE END WHILE */
-
-    /* USER CODE BEGIN 3 */
-  }
-  /* USER CODE END 3 */
+   /* Infinite loop */
+ /* USER CODE BEGIN WHILE */
+ while (1)
+ {
+ /* USER CODE END WHILE */
+ HAL_GPIO_TogglePin(GPIOC, GPIO_PIN_13);
+ HAL_Delay(100); /* Insert delay 100 ms */
+ /* USER CODE BEGIN 3 */
+ }
+ /* USER CODE END 3 */
 }
 
 /**
